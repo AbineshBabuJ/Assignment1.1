@@ -1,0 +1,971 @@
+Script started on 2022-03-16 00:56:06+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="79" LINES="29"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mDesktop[0m    [01;34mDownloads[0m  my_unix_session  [01;34mPublic[0m     [01;34mVideos[0m
+[01;34mDocuments[0m  [01;34mMusic[0m      [01;34mPictures[0m         [01;34mTemplates[0m
+[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ pwd
+[?2004l/home/abinesh
+[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ cd/Desktop
+[?2004lbash: cd/Desktop: No such file or directory
+[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ cd Desktop
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ c[Kls
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ cd
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ ls -F
+[?2004l[0m[01;34mDesktop[0m/    [01;34mDownloads[0m/  my_unix_session  [01;34mPublic[0m/     [01;34mVideos[0m/
+[01;34mDocuments[0m/  [01;34mMusic[0m/      [01;34mPictures[0m/        [01;34mTemplates[0m/
+[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ ls --help
+[?2004lUsage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      with -l, scale sizes by SIZE when printing them;
+                               e.g., '--block-size=M'; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be 'always' (default
+                               if omitted), 'auto', or 'never'; more info below
+  -d, --directory            list directories themselves, not their contents
+  -D, --dired                generate output designed for Emacs' dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l and -s, print sizes like 1K 234M 2G etc.
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --hyperlink[=WHEN]     hyperlink file names; WHEN can be 'always'
+                               (default if omitted), 'auto', or 'never'
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage;
+                               used only with -s and per directory totals
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print entry names without quoting
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the default,
+                               unless program is 'ls' and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, escape
+                               (overrides QUOTING_STYLE environment variable)
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            change the default of using modification times;
+                               access time (-u): atime, access, use;
+                               change time (-c): ctime, status;
+                               birth time: birth, creation;
+                             with -l, WORD determines which time to show;
+                             with --sort=time, sort by WORD (newest first)
+      --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below
+  -t                         sort by time, newest first; see --time
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest first
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid '\n' with -q or -b
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
+
+The TIME_STYLE argument can be full-iso, long-iso, iso, locale, or +FORMAT.
+FORMAT is interpreted like in date(1).  If FORMAT is FORMAT1<newline>FORMAT2,
+then FORMAT1 applies to non-recent files and FORMAT2 to recent files.
+TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.
+Also the TIME_STYLE environment variable sets the default style to use.
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation <https://www.gnu.org/software/coreutils/ls>
+or available locally via: info '(coreutils) ls invocation'
+[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ man ls
+[?2004l[?1049h[22;0;0t[?1h=LS(1)                           User Commands                           LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List  information  about the FILEs (the current directory by default).[m
+       Sort entries alphabetically if none of [1m-cftuvSUX[0m nor [1m--sort[0m is  speci‐[m
+       fied.[m
+[m
+       Mandatory  arguments  to  long options are mandatory for short options[m
+       too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+              with [1m-l[0m, print the author of each file[m
+[m
+       [1m-b[0m, [1m--escape[0m[m
+              print C-style escapes for nongraphic characters[m
+[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--block-size[0m=[4mSIZE[24m[m
+[7m Manual page ls(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              with  [1m-l[0m,  scale  sizes  by  SIZE  when  printing  them;  e.g.,[m
+[7m Manual page ls(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              '--block-size=M'; see SIZE format below[m
+[7m Manual page ls(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-B[0m, [1m--ignore-backups[0m[m
+[7m Manual page ls(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              do not list implied entries ending with ~[m
+[7m Manual page ls(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-c[0m     with  [1m-lt[0m:  sort by, and show, ctime (time of last modification[m
+[7m Manual page ls(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              of file status information); with [1m-l[0m: show ctime  and  sort  by[m
+[7m Manual page ls(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[29;1H[K[7m Manual page ls(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[29;1H[K[7m Manual page ls(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[29;1H[K[7m Manual page ls(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[29;1H[K[7m Manual page ls(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[29;1H[K[7m Manual page ls(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       ls - list directory contents[m
+[29;1H[K[7m Manual page ls(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[29;1H[K[7m Manual page ls(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[29;1H[K[7m Manual page ls(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMLS(1)                           User Commands                           LS(1)[m
+[29;1H[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--block-size[0m=[4mSIZE[24m[m
+[7m Manual page ls(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              with  [1m-l[0m,  scale  sizes  by  SIZE  when  printing  them;  e.g.,[m
+[7m Manual page ls(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              '--block-size=M'; see SIZE format below[m
+[7m Manual page ls(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-B[0m, [1m--ignore-backups[0m[m
+[7m Manual page ls(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              do not list implied entries ending with ~[m
+[7m Manual page ls(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-c[0m     with  [1m-lt[0m:  sort by, and show, ctime (time of last modification[m
+[7m Manual page ls(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              of file status information); with [1m-l[0m: show ctime  and  sort  by[m
+[7m Manual page ls(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              name; otherwise: sort by ctime, newest first[m
+[7m Manual page ls(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-C[0m     list entries by columns[m
+[7m Manual page ls(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--color[0m[=[4mWHEN[24m][m
+[7m Manual page ls(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              colorize the output; WHEN can be 'always' (default if omitted),[m
+[7m Manual page ls(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              'auto', or 'never'; more info below[m
+[7m Manual page ls(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-d[0m, [1m--directory[0m[m
+[7m Manual page ls(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              list directories themselves, not their contents[m
+[7m Manual page ls(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-D[0m, [1m--dired[0m[m
+[7m Manual page ls(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              generate output designed for Emacs' dired mode[m
+[7m Manual page ls(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-f[0m     do not sort, enable [1m-aU[0m, disable [1m-ls[0m [1m--color[0m[m
+[7m Manual page ls(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-F[0m, [1m--classify[0m[m
+[7m Manual page ls(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              append indicator (one of */=>@|) to entries[m
+[7m Manual page ls(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--file-type[0m[m
+[7m Manual page ls(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              likewise, except do not append '*'[m
+[7m Manual page ls(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--format[0m=[4mWORD[24m[m
+[7m Manual page ls(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              across [1m-x[0m, commas [1m-m[0m, horizontal [1m-x[0m, long [1m-l[0m, single-column [1m-1[0m,[m
+[7m Manual page ls(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              verbose [1m-l[0m, vertical [1m-C[0m[m
+[7m Manual page ls(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--full-time[0m[m
+[7m Manual page ls(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              like [1m-l[0m [1m--time-style[0m=[4mfull-iso[24m[m
+[7m Manual page ls(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-g[0m     like [1m-l[0m, but do not list owner[m
+[7m Manual page ls(1) line 40 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ ls -l
+[?2004ltotal 52
+drwxr-xr-x 2 abinesh abinesh  4096 Mar 16 00:45 [0m[01;34mDesktop[0m
+drwxr-xr-x 2 abinesh abinesh  4096 Mar 16 00:45 [01;34mDocuments[0m
+drwxr-xr-x 2 abinesh abinesh  4096 Mar 16 00:45 [01;34mDownloads[0m
+drwxr-xr-x 2 abinesh abinesh  4096 Mar 16 00:45 [01;34mMusic[0m
+-rw-rw-r-- 1 abinesh abinesh 20480 Mar 16 00:59 my_unix_session
+drwxr-xr-x 2 abinesh abinesh  4096 Mar 16 00:45 [01;34mPictures[0m
+drwxr-xr-x 2 abinesh abinesh  4096 Mar 16 00:45 [01;34mPublic[0m
+drwxr-xr-x 2 abinesh abinesh  4096 Mar 16 00:45 [01;34mTemplates[0m
+drwxr-xr-x 2 abinesh abinesh  4096 Mar 16 00:45 [01;34mVideos[0m
+[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ ls -lh
+[?2004ltotal 52K
+drwxr-xr-x 2 abinesh abinesh 4.0K Mar 16 00:45 [0m[01;34mDesktop[0m
+drwxr-xr-x 2 abinesh abinesh 4.0K Mar 16 00:45 [01;34mDocuments[0m
+drwxr-xr-x 2 abinesh abinesh 4.0K Mar 16 00:45 [01;34mDownloads[0m
+drwxr-xr-x 2 abinesh abinesh 4.0K Mar 16 00:45 [01;34mMusic[0m
+-rw-rw-r-- 1 abinesh abinesh  20K Mar 16 00:59 my_unix_session
+drwxr-xr-x 2 abinesh abinesh 4.0K Mar 16 00:45 [01;34mPictures[0m
+drwxr-xr-x 2 abinesh abinesh 4.0K Mar 16 00:45 [01;34mPublic[0m
+drwxr-xr-x 2 abinesh abinesh 4.0K Mar 16 00:45 [01;34mTemplates[0m
+drwxr-xr-x 2 abinesh abinesh 4.0K Mar 16 00:45 [01;34mVideos[0m
+[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ ls -rt
+[?2004l[0m[01;34mVideos[0m     [01;34mPublic[0m    [01;34mMusic[0m      [01;34mDocuments[0m  my_unix_session
+[01;34mTemplates[0m  [01;34mPictures[0m  [01;34mDownloads[0m  [01;34mDesktop[0m
+[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ ls -F Desktop
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ m[Kcd Desktop
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ mkdir MyLinux
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ cd 
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ ls -F Desktop
+[?2004l[0m[01;34mMyLinux[0m/
+[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ cd Desktop
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ pwd
+[?2004l/home/abinesh/Desktop
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ cd ..
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ pwd
+[?2004l/home/abinesh
+[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ ls -F -a
+[?2004l[0m[01;34m.[0m/            [01;34m.cache[0m/     [01;34mDownloads[0m/  my_unix_session  [01;34m.ssh[0m/
+[01;34m..[0m/           [01;34m.config[0m/    [01;34m.gnupg[0m/     [01;34mPictures[0m/        [01;34mTemplates[0m/
+.bash_logout  [01;34mDesktop[0m/    [01;34m.local[0m/     .profile         [01;34mVideos[0m/
+.bashrc       [01;34mDocuments[0m/  [01;34mMusic[0m/      [01;34mPublic[0m/
+[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ cd ~/Desktop/MyLinux/[K
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ pwd
+[?2004l/home/abinesh/Desktop/MyLinux
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ 
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cd ..
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ cd ..
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ cd -
+[?2004l/home/abinesh/Desktop
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ cd
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ ls -s
+[?2004ltotal 56
+ 4 [0m[01;34mDesktop[0m     4 [01;34mDownloads[0m  24 my_unix_session   4 [01;34mPublic[0m      4 [01;34mVideos[0m
+ 4 [01;34mDocuments[0m   4 [01;34mMusic[0m       4 [01;34mPictures[0m          4 [01;34mTemplates[0m
+[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ cd Desktop
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ cd MyLinux/[K
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ touch a.txt b.txt
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ ls -F
+[?2004la.txt  b.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ ls
+[?2004la.txt  b.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ mkdir Training
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ ls -F
+[?2004la.txt  b.txt  [0m[01;34mTraining[0m/
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ mk [Kdir -p ../project/data ../proje ct/results
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ ls -FR ../project
+[?2004l../project:
+[0m[01;34mdata[0m/  [01;34mresults[0m/
+
+../project/data:
+
+../project/results:
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ ls
+[?2004la.txt  b.txt  [0m[01;34mTraining[0m
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cd [K[K[Knano c.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;29r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[27;34H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 5.6.1                        c.txt                                  [1;78H(B[m[28d(B[0;7m^G(B[m Help[28;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[28;61H(B[0;7m^T(B[m Execute[29d(B[0;7m^X(B[m Exit[29;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[1;47H(B[0;7m*[78G(B[m[2dH[?12l[?25h[?25lI[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25ll[?12l[?25h[?25lo[?12l[?25h[?25l [?12l[?25h[?25lW[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25ll[?12l[?25h[?25ld[?12l[?25h[?25l[3d[?12l[?25h[?25l[28;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[29;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[27d(B[0;7mFile Name to Write: c.txt                                                      [27;26H(B[m[?12l[?25h[?25l[32G[1K (B[0;7m[ Writing... ](B[m[K[1;47H(B[0;7m [78G(B[m[27;32H(B[0;7m[ Wrote 2 lines ](B[m[28;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[29;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[3d[?12l[?25h[?25l[27d[J[29d[?12l[?25h[29;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ ls -l
+[?2004ltotal 8
+-rw-rw-r-- 1 abinesh abinesh    0 Mar 16 01:07 a.txt
+-rw-rw-r-- 1 abinesh abinesh    0 Mar 16 01:07 b.txt
+-rw-rw-r-- 1 abinesh abinesh   13 Mar 16 01:10 c.txt
+drwxrwxr-x 2 abinesh abinesh 4096 Mar 16 01:07 [0m[01;34mTraining[0m
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ mv c.txt renamed.txt[C[C[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt .txtm.txto.txtv.txte.txtd.txt[C[C[C[C
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ ls
+[?2004la.txt  b.txt  moved.txt  [0m[01;34mTraining[0m
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cp moved.txt Training/f.txt
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cd Training/
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ ls
+[?2004lf.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ cd
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ cd d[KDesktop/MyLinux/
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ ls
+[?2004la.txt  b.txt  moved.txt  [0m[01;34mTraining[0m
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ rm a.txt
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ ls a.txt
+[?2004lls: cannot access 'a.txt': No such file or directory
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cd My[K[KTraining/
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ ls
+[?2004lf.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ touch 1.txt 2.txt
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ ls
+[?2004l1.txt  2.txt  f.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ cd ..
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ rm -i b.txt
+[?2004lrm: remove regular empty file 'b.txt'? n
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ ls
+[?2004lb.txt  moved.txt  [0m[01;34mTraining[0m
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ lsrm -i b.txt
+[?2004lrm: remove regular empty file 'b.txt'? y
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ ls
+[?2004lmoved.txt  [0m[01;34mTraining[0m
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ rm Training/
+[?2004lrm: cannot remove 'Training/': Is a directory
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ rm -r Training/
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ ls
+[?2004lmoved.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ mkdir Training
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cd Training/
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ touch [[K{1..50}.txt
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ ls
+[?2004l10.txt  15.txt  1.txt   24.txt  29.txt  33.txt  38.txt  42.txt  47.txt  5.txt
+11.txt  16.txt  20.txt  25.txt  2.txt   34.txt  39.txt  43.txt  48.txt  6.txt
+12.txt  17.txt  21.txt  26.txt  30.txt  35.txt  3.txt   44.txt  49.txt  7.txt
+13.txt  18.txt  22.txt  27.txt  31.txt  36.txt  40.txt  45.txt  4.txt   8.txt
+14.txt  19.txt  23.txt  28.txt  32.txt  37.txt  41.txt  46.txt  50.txt  9.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ rm *[K?.txt[C?.txt[C[C[C[C[C
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ ls
+[?2004l1.txt  2.txt  3.txt  4.txt  5.txt  6.txt  7.txt  8.txt  9.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ lsrm ??.txtls[Ktouch {1..50}.txt[C[1P..50}.txt1..50}.txt0..50}.txt[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ rm ?.[K[K*.txt
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ ls
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ touch {1..50}.txt
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ rm 1*.txt
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ ls
+[?2004l20.txt  24.txt  28.txt  31.txt  35.txt  39.txt  42.txt  46.txt  4.txt   7.txt
+21.txt  25.txt  29.txt  32.txt  36.txt  3.txt   43.txt  47.txt  50.txt  8.txt
+22.txt  26.txt  2.txt   33.txt  37.txt  40.txt  44.txt  48.txt  5.txt   9.txt
+23.txt  27.txt  30.txt  34.txt  38.txt  41.txt  45.txt  49.txt  6.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ ls 4*.txt
+[?2004l40.txt  42.txt  44.txt  46.txt  48.txt  4.txt
+41.txt  43.txt  45.txt  47.txt  49.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ cd ..
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ ls
+[?2004lmoved.txt  [0m[01;34mTraining[0m
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ wc moved.txt 
+[?2004l 2  2 13 moved.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ wc -l *.txt
+[?2004l2 moved.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ nano numbers.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;29r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[27;34H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 5.6.1                     numbers.txt                               [1;78H(B[m[28d(B[0;7m^G(B[m Help[28;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[28;61H(B[0;7m^T(B[m Execute[29d(B[0;7m^X(B[m Exit[29;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[?12l[?25h[?25l[1;50H(B[0;7m*[78G(B[m[3d[?12l[?25h[?25l[A[?12l[?25h[?25l4[?12l[?25h[?25l[3d[?12l[?25h[?25l8[?12l[?25h[?25l[4d[?12l[?25h[?25l7[?12l[?25h[?25l[5d[?12l[?25h[?25l3[?12l[?25h[?25l[6d[?12l[?25h[?25l1[?12l[?25h[?25l0[?12l[?25h[?25l[7d[?12l[?25h[?25l5[?12l[?25h[?25l5[?12l[?25h[?25l[8d[?12l[?25h[?25l8[?12l[?25h[?25l7[?12l[?25h[?25l[27d[K[9d[?12l[?25h[?25l4[?12l[?25h[?25l3[?12l[?25h[?25l[28;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[29;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[27d(B[0;7mFile Name to Write: numbers.txt                                                [27;32H(B[m[?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;50H(B[0;7m [78G(B[m[27;32H(B[0;7m[ Wrote 8 lines ](B[m[28;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[29;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[9;3H[?12l[?25h[?25l[27d[J[29d[?12l[?25h[29;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ sort numbers.txt 
+[?2004l10
+3
+4
+43
+55
+7
+8
+87
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ sort -n numbers.txt 
+[?2004l3
+4
+7
+8
+10
+43
+55
+87
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ sort -n numbers.txt > sorted.txt
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ head[K[K[K[Kcat sorted.txt
+[?2004l3
+4
+7
+8
+10
+43
+55
+87
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ echo hello > greetings.txt
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cat greetings.txt 
+[?2004lhello
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ echo hello[K[K[K[K[K[Kw[K world > greetings.txt 
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cecho world > greetings.txt [9Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lworld
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cat greetings.txt [9@echo world >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho hello > greetings.txt
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ echo hello > greetings.txt[8Pcat greetings.txt 
+[?2004lhello
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cat greetings.txt echo hello > greetings.txt[8Pcat greetings.txt [9@echo world >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@>[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ echo world >> greetings.txt [10Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lhello
+world
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ head -n 1 f[Kgreetings.txt 
+[?2004lhello
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ head -n 1 greetings.txt [C[C[1P[1P[1P[1P[1@t[1@a[1@i[1@l
+[?2004lworld
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ tail -n 1 greetings.txt [C[1P[1@2
+[?2004lhello
+world
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ sort numbers.txt [1@-[C[1@n[1@ [C[C[C[C[C[C[C[C[C[C[C[C| head -n 3
+[?2004l3
+4
+7
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ ls
+[?2004l'100 Sales Records.csv'   moved.txt     sorted.txt
+ greetings.txt            numbers.txt   [0m[01;34mTraining[0m
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cat 100\ Sales\ Records.csv [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K'100 Sales Records.csv' [1P[1P[1P[1@h[1@e[1@a[1@d[C[1@ [1@-[1@n[C '100 Sales Records.csv'  [A]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ [C[C[C[C[C[C[C[C5 '100 Sales Records.csv' [A]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ [C[C[C[C[C[C[C[C[C[C '100 Sales Records.csv' [A]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ [C[C[C[C[C[C[C[C[C[C
+
+[?2004lRegion,Country,Item Type,Sales Channel,Order Priority,Order Date,Order ID,Ship Date,Units Sold,Unit Price,Unit Cost,Total Revenue,Total Cost,Total Profit
+Australia and Oceania,Tuvalu,Baby Food,Offline,H,5/28/2010,669165933,6/27/2010,9925,255.28,159.42,2533654.00,1582243.50,951410.50
+Central America and the Caribbean,Grenada,Cereal,Online,C,8/22/2012,963881480,9/15/2012,2804,205.70,117.11,576782.80,328376.44,248406.36
+Europe,Russia,Office Supplies,Offline,L,5/2/2014,341417157,5/8/2014,1779,651.21,524.96,1158502.59,933903.84,224598.75
+Sub-Saharan Africa,Sao Tome and Principe,Fruits,Online,C,6/20/2014,514321792,7/5/2014,8102,9.33,6.92,75591.66,56065.84,19525.82
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cut -d , -f 2 '100 Sales Records.csv' 
+[?2004lCountry
+Tuvalu
+Grenada
+Russia
+Sao Tome and Principe
+Rwanda
+Solomon Islands
+Angola
+Burkina Faso
+Republic of the Congo
+Senegal
+Kyrgyzstan
+Cape Verde
+Bangladesh
+Honduras
+Mongolia
+Bulgaria
+Sri Lanka
+Cameroon
+Turkmenistan
+East Timor
+Norway
+Portugal
+Honduras
+New Zealand
+Moldova 
+France
+Kiribati
+Mali
+Norway
+The Gambia
+Switzerland
+South Sudan
+Australia
+Myanmar
+Djibouti
+Costa Rica
+Syria
+The Gambia
+Brunei
+Bulgaria
+Niger
+Azerbaijan
+The Gambia
+Slovakia
+Myanmar
+Comoros
+Iceland
+Switzerland
+Macedonia
+Mauritania
+Albania
+Lesotho
+Saudi Arabia
+Sierra Leone
+Sao Tome and Principe
+Cote d'Ivoire
+Fiji
+Austria
+United Kingdom
+Djibouti
+Australia
+San Marino
+Cameroon
+Libya
+Haiti
+Rwanda
+Gabon
+Belize
+Lithuania
+Madagascar
+Turkmenistan
+Libya
+Democratic Republic of the Congo
+Djibouti
+Pakistan
+Mexico
+Federated States of Micronesia
+Laos
+Monaco
+Samoa 
+Spain
+Lebanon
+Iran
+Zambia
+Kenya
+Mexico
+Sao Tome and Principe
+The Gambia
+Kuwait
+Slovenia
+Sierra Leone
+Australia
+Azerbaijan
+Romania
+Nicaragua
+Mali
+Malaysia
+Sierra Leone
+Mexico
+Mozambique
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cut -d , -f 2 '100 Sales Records.csv' | wc
+[?2004l    101     139    1012
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cut -d , -f 2 '100 Sales Records.csv' | wc[K[Kuniq | wc
+[?2004l    101     139    1012
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ ls
+[?2004l'100 Sales Records.csv'   moved.txt     sorted.txt
+ greetings.txt            numbers.txt   [0m[01;34mTraining[0m
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ for loo[K[K[Kv in {0..10}
+[?2004l[?2004h> do 
+[?2004l[?2004h> 
+Display all 1842 possibilities? (y or n)
+> echo $v
+[?2004l[?2004h> done
+[?2004l0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ for file in *.txt
+[?2004l[?2004h> do
+[?2004l[?2004h> ls $file
+[?2004l[?2004h> done
+[?2004lgreetings.txt
+moved.txt
+numbers.txt
+sorted.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cd Training
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ ls
+[?2004l20.txt  24.txt  28.txt  31.txt  35.txt  39.txt  42.txt  46.txt  4.txt   7.txt
+21.txt  25.txt  29.txt  32.txt  36.txt  3.txt   43.txt  47.txt  50.txt  8.txt
+22.txt  26.txt  2.txt   33.txt  37.txt  40.txt  44.txt  48.txt  5.txt   9.txt
+23.txt  27.txt  30.txt  34.txt  38.txt  41.txt  45.txt  49.txt  6.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ for f in 3*
+[?2004l[?2004h> do
+[?2004l[?2004h> ls $f
+[?2004l[?2004h> done
+[?2004l30.txt
+31.txt
+32.txt
+33.txt
+34.txt
+35.txt
+36.txt
+37.txt
+38.txt
+39.txt
+3.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux/Training[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux/Training[00m$ cd ..
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cd ..for f in 3*; do ls $f; done[C[C[C[1P[C[1@*[1@o[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lls: cannot access '100': No such file or directory
+ls: cannot access 'Sales': No such file or directory
+ls: cannot access 'Records.csv': No such file or directory
+moved.txt
+sorted.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ for d in *.txt
+[?2004l[?2004h> do
+[?2004l[?2004h> cat $d >> new.txt
+[?2004l[?2004h> done
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ ct[Kat net[Kw.txt 
+[?2004lhello
+world
+Hello World
+
+4
+8
+7
+3
+10
+55
+87
+43
+3
+4
+7
+8
+10
+43
+55
+87
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cat new.txt for d in *.txt; do cat $d >> new.txt; done[A]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ [C[C[C[C[5Pf in *o*; do ls $f; done
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd in *.txt; do cat $d >> new.txt; done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pcat new.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kfor *.txt i [K[C[1P i[1P i[1P i[1P i[1P ix i[C[Cn *.txt
+[?2004l[?2004h> do e[K
+[?2004l[?2004h> echo $x
+[?2004l[?2004h> head -3[Kn 3 $x
+[?2004l[?2004h> done
+[?2004lgreetings.txt
+hello
+world
+moved.txt
+Hello World
+
+new.txt
+hello
+world
+Hello World
+numbers.txt
+4
+8
+7
+sorted.txt
+3
+4
+7
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ history | tail -n 5
+[?2004l  109  for f in *o*; do ls $f; done
+  110  for d in *.txt; do cat $d >> new.txt; done
+  111  cat new.txt 
+  112  for x in *.txt; do  echo $x; head -n 3 $x; done
+  113  history | tail -n 5
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ history | tail -n 5[K[K[K[K[K[K[K[K[K[K[K[K > history.txt
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ nano head.[K[K[K[K[Kcmd.bsh[K[Kash
+[?2004l[?2004h[?1049h[22;0;0t[1;29r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[27;34H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 5.6.1                       cmd.bash                                [1;78H(B[m[28d(B[0;7m^G(B[m Help[28;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[28;61H(B[0;7m^T(B[m Execute[29d(B[0;7m^X(B[m Exit[29;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[1;49H(B[0;7m*[78G(B[m[2dh[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25l(B[0;1m[34mhead[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l(B[0;1m[35m -n[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l 3[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l[32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$1[39m(B[m[?12l[?25h[?25l(B[0;1m[33m"$1"[39m(B[m[?12l[?25h[?25l[28;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[29;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[27d(B[0;7mFile Name to Write: cmd.bash                                                   [27;29H(B[m[?12l[?25h[?25l   [1K (B[0;7m[ Writing... ](B[m[K[1;49H(B[0;7m [78G(B[m[27;32H(B[0;7m[ Wrote 1 line ](B[m[28;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[29;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[2;15H[?12l[?25h[?25l[27d[J[29d[?12l[?25h[29;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ nano cmd.bash[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[Krm cmd.bash 
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ nano cmd.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;29r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[27;34H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 5.6.1                        cmd.sh                                 [1;78H(B[m[28d(B[0;7m^G(B[m Help[28;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[28;61H(B[0;7m^T(B[m Execute[29d(B[0;7m^X(B[m Exit[29;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[1;48H(B[0;7m*[78G(B[m[2dh[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25l(B[0;1m[34mhead[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l(B[0;1m[35m -n[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l 3[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l[32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$![39m(B[m[?12l[?25h[?25l(B[0;1m[33m"$!"[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[C[?12l[?25h[?25l(B[0;1m[33m"[39m(B[m[K[?12l[?25h[?25l(B[0;1m[33m1"[39m(B[m[?12l[?25h[?25l[27d[K[2;15H[?12l[?25h[?25l[28;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[29;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[27d(B[0;7mFile Name to Write: cmd.sh                                                     [27;27H(B[m[?12l[?25h[?25l[32G[1K (B[0;7m[ Writing... ](B[m[K[1;48H(B[0;7m [78G(B[m[27;32H(B[0;7m[ Wrote 1 line ](B[m[28;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[29;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[2;15H[?12l[?25h[?25l[27d[J[29d[?12l[?25h[29;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ nano cmd.sh[1P cmd.sh[1P cmd.sh[1P cmd.sh[1P cmd.shb cmd.sha cmd.shs cmd.shh cmd.sh[C[C[C[C[C[C[C numbers.txt
+[?2004l4
+8
+7
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ bash cmd.sh numbers.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt*.txt[C[C[C[C
+[?2004lhello
+world
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ bash cmd.sh *.txtnumbers.txt[12Pnano cmd.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;29r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[27;33H(B[0;7m[ Reading... ](B[m[27;39H(B[0;7m 1 line ](B[m[H(B[0;7m  GNU nano 5.6.1                        cmd.sh                                 [1;78H(B[m[28d(B[0;7m^G(B[m Help[28;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[28;61H(B[0;7m^T(B[m Execute[29d(B[0;7m^X(B[m Exit[29;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d(B[0;1m[34mhead[35m -n[39m(B[m 3 (B[0;1m[33m"$1"[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l3[?12l[?25h[?25l[1;48H(B[0;7m*[78G(B[m[2;9H (B[0;1m[33m"$1"[39m(B[m[K[9G[?12l[?25h[?25l(B[0;1m[33m" "[31m$1[39m(B[m"[10G[?12l[?25h[?25l(B[0;1m[33m$ "[31m$1[39m(B[m"[11G[?12l[?25h[?25l(B[0;1m[33m2 "[31m$1[39m(B[m"[12G[?12l[?25h[?25l(B[0;1m[33m"[39m(B[m (B[0;1m[33m"$1"[13G[39m(B[m[?12l[?25h[?25l  (B[0;1m[33m"$1"[14G[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[27d[K[2;19H[?12l[?25h[?25l[28;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[29;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[27d(B[0;7mFile Name to Write: cmd.sh                                                     [27;27H(B[m[?12l[?25h[?25l[32G[1K (B[0;7m[ Writing... ](B[m[K[1;48H(B[0;7m [78G(B[m[27;32H(B[0;7m[ Wrote 1 line ](B[m[28;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[29;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[2;19H[?12l[?25h[?25l[27d[J[29d[?12l[?25h[29;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ nano cmd.shbash cmd.sh *.txt[K[K[K[K[Knumbers.txt 4
+[?2004l4
+8
+7
+3
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ history >[K[K| |[C tail -n 5 > recent.sh
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ nano longed[Kst.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;29r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[27;34H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 5.6.1                      longest.sh                               [1;78H(B[m[28d(B[0;7m^G(B[m Help[28;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[28;61H(B[0;7m^T(B[m Execute[29d(B[0;7m^X(B[m Exit[29;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[1;50H(B[0;7m*[78G(B[m[2dw[?12l[?25h[?25lc[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l(B[0;1m[35m -l[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$1[39m(B[m[?12l[?25h[?25l/[?12l[?25h[?25l*[?12l[?25h[?25l.[?12l[?25h[?25l[32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$2[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m|[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l s[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25l(B[0;1m[34msort[27d[39m(B[m[K[2;21H[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l(B[0;1m[35m -n[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m|[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l t[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25l(B[0;1m[34mtail[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l(B[0;1m[35m -n[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l 2[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l 1[?12l[?25h[?25l[28;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[29;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[27d(B[0;7mFile Name to Write: longest.sh                                                 [27;31H(B[m[?12l[?25h[?25l [1K (B[0;7m[ Writing... ](B[m[K[1;50H(B[0;7m [78G(B[m[27;32H(B[0;7m[ Wrote 1 line ](B[m[28;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[29;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[2;36H[?12l[?25h[?25l[27d[J[29d[?12l[?25h[29;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ nano longest.sh[C[1P longest.sh[1P longest.sh[1P longest.sh[1P longest.shb longest.sha longest.shs longest.shh longest.sh[C[C[C[C[C[C[C[C[C[C[C . txt
+[?2004l 154 total
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ bash longest.sh . txt[6Pnano longest.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;29r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[27;33H(B[0;7m[ Reading... ](B[m[27;39H(B[0;7m 1 line ](B[m[H(B[0;7m  GNU nano 5.6.1                      longest.sh                               [1;78H(B[m[28d(B[0;7m^G(B[m Help[28;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[28;61H(B[0;7m^T(B[m Execute[29d(B[0;7m^X(B[m Exit[29;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2dwc(B[0;1m[35m -l[39m(B[m (B[0;1m[31m$1[39m(B[m/*.(B[0;1m[31m$2[39m(B[m [32m|[39m(B[m (B[0;1m[34msort[35m -n[39m(B[m [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 1[?12l[?25h[?25lw[?12l[?25h[?25lc[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l/[?12l[?25h[?25l*[?12l[?25h[?25l.[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[27d[K[2;21H[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l1[?12l[?25h[?25l[1;50H(B[0;7m*[78G(B[m[2;34H[42m [49m(B[m[K[?12l[?25h[?25l 2[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m|[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l h[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25l(B[0;1m[34mhead[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l(B[0;1m[35m -n[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l 1[?12l[?25h[?25l[28;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[29;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[27d(B[0;7mFile Name to Write: longest.sh                                                 [27;31H(B[m[?12l[?25h[?25l(B[0;7mx(B[m[?12l[?25h[?25l(B[0;7m (B[m[?12l[?25h[?25l [1K (B[0;7m[ Writing... ](B[m[K[1;50H(B[0;7m [78G(B[m[27;32H(B[0;7m[ Wrote 1 line ](B[m[28;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[29;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[2;48H[?12l[?25h[?25l[27d[J[29d[?12l[?25h[29;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ nano longest.shbash longest.sh . txt
+[?2004l 114 ./history.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ nano haiku.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;29r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[27;34H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 5.6.1                      haiku.txt                                [1;78H(B[m[28d(B[0;7m^G(B[m Help[28;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[28;61H(B[0;7m^T(B[m Execute[29d(B[0;7m^X(B[m Exit[29;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[1;49H(B[0;7m*[78G(B[m[2dT[?12l[?25h[?25lh[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25lT[?12l[?25h[?25la[?12l[?25h[?25lo[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25le[?12l[?25h[?25le[?12l[?25h[?25ln[27d[K[2;21H[?12l[?25h[?25l[3d[?12l[?25h[?25lI[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25lo[?12l[?25h[?25lt[?12l[?25h[?25l [?12l[?25h[?25ly[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lr[?12l[?25h[?25lu[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25lT[?12l[?25h[?25la[?12l[?25h[?25lo[?12l[?25h[?25l,[?12l[?25h[?25l [?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25ll[?12l[?25h[?25l[4d[?12l[?25h[?25lY[?12l[?25h[?25lo[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25l=[?12l[?25h[?25l=[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lu[?12l[?25h[?25l [?12l[?25h[?25lb[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25lh[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l.[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25lW[?12l[?25h[?25li[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25lr[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25lo[?12l[?25h[?25ls[?12l[?25h[?25ls[?12l[?25h[?25l[7d[?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25ls[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25lo[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25lb[?12l[?25h[?25ls[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l[8d[?12l[?25h[?25l"[?12l[?25h[?25lM[?12l[?25h[?25ly[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l"[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25lo[?12l[?25h[?25lt[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25lY[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ld[?12l[?25h[?25la[?12l[?25h[?25ly[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25lt[?12l[?25h[?25l [?12l[?25h[?25lw[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lk[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l[11d[?12l[?25h[?25lT[?12l[?25h[?25lo[?12l[?25h[?25ld[?12l[?25h[?25la[?12l[?25h[?25ly[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25lt[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25lo[?12l[?25h[?25lt[?12l[?25h[?25l [?12l[?25h[?25lw[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lk[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25l[12d[?12l[?25h[?25lS[?12l[?25h[?25lo[?12l[?25h[?25lf[?12l[?25h[?25lt[?12l[?25h[?25lw[?12l[?25h[?25la[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25lk[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25l[28;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[29;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[27d(B[0;7mFile Name to Write: haiku.txt                                                  [27;30H(B[m[?12l[?25h[?25l  [1K (B[0;7m[ Writing... ](B[m[K[1;49H(B[0;7m [78G(B[m[27;31H(B[0;7m[ Wrote 11 lines ](B[m[28;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[29;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[12;22H[?12l[?25h[?25l[27d[J[29d[?12l[?25h[29;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cat haiku.txt
+[?2004lThe Tao that is seen
+Is not the true Tao, untill
+You bring fresh toner.
+
+With searching comes loss
+and the presence of absence:
+"My thesis" not found
+
+Yesterday it worked
+Today it is not working
+Software is like that
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ grep not haiku,[K.txt
+[?2004lIs [01;31m[Knot[m[K the true Tao, untill
+"My thesis" [01;31m[Knot[m[K found
+Today it is [01;31m[Knot[m[K working
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ grep -n "it" haiku.txt
+[?2004l[32m[K5[m[K[36m[K:[m[KW[01;31m[Kit[m[Kh searching comes loss
+[32m[K9[m[K[36m[K:[m[KYesterday [01;31m[Kit[m[K worked
+[32m[K10[m[K[36m[K:[m[KToday [01;31m[Kit[m[K is not working
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ grep -n -w "the" haiku.txt
+[?2004l[32m[K2[m[K[36m[K:[m[KIs not [01;31m[Kthe[m[K true Tao, untill
+[32m[K6[m[K[36m[K:[m[Kand [01;31m[Kthe[m[K presence of absence:
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ grep -n -w "the" haiku.txt[1P[1P[1P
+[?2004l[32m[K2[m[K[36m[K:[m[KIs not [01;31m[Kthe[m[K true Tao, untill
+[32m[K6[m[K[36m[K:[m[Kand [01;31m[Kthe[m[K presence of absence:
+[32m[K7[m[K[36m[K:[m[K"My [01;31m[Kthe[m[Ksis" not found
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ grep -n "the" haiku.txt[C[1@i[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[32m[K1[m[K[36m[K:[m[K[01;31m[KThe[m[K Tao that is seen
+[32m[K2[m[K[36m[K:[m[KIs not [01;31m[Kthe[m[K true Tao, untill
+[32m[K6[m[K[36m[K:[m[Kand [01;31m[Kthe[m[K presence of absence:
+[32m[K7[m[K[36m[K:[m[K"My [01;31m[Kthe[m[Ksis" not found
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ grep -ni "the" haiku.txt[C[1@v[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[32m[K3[m[K[36m[K:[m[KYou bring fresh toner.
+[32m[K4[m[K[36m[K:[m[K
+[32m[K5[m[K[36m[K:[m[KWith searching comes loss
+[32m[K8[m[K[36m[K:[m[K
+[32m[K9[m[K[36m[K:[m[KYesterday it worked
+[32m[K10[m[K[36m[K:[m[KToday it is not working
+[32m[K11[m[K[36m[K:[m[KSoftware is like that
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ grep Y[C Y- Yr Y[C Y[C[Cesterday .
+[?2004l[35m[K./haiku.txt[m[K[36m[K:[m[K[01;31m[KYesterday[m[K it worked
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ grep -E "^.o" haiku.txt
+[?2004l[01;31m[KYo[m[Ku bring fresh toner.
+[01;31m[KTo[m[Kday it is not working
+[01;31m[KSo[m[Kftware is like that
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop/MyLinux[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop/MyLinux[00m$ cd ..
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ find
+[?2004l.
+./project
+./project/data
+./project/results
+./MyLinux
+./MyLinux/Training
+./MyLinux/Training/36.txt
+./MyLinux/Training/29.txt
+./MyLinux/Training/48.txt
+./MyLinux/Training/23.txt
+./MyLinux/Training/6.txt
+./MyLinux/Training/31.txt
+./MyLinux/Training/3.txt
+./MyLinux/Training/25.txt
+./MyLinux/Training/33.txt
+./MyLinux/Training/37.txt
+./MyLinux/Training/32.txt
+./MyLinux/Training/30.txt
+./MyLinux/Training/45.txt
+./MyLinux/Training/4.txt
+./MyLinux/Training/21.txt
+./MyLinux/Training/28.txt
+./MyLinux/Training/42.txt
+./MyLinux/Training/35.txt
+./MyLinux/Training/41.txt
+./MyLinux/Training/27.txt
+./MyLinux/Training/5.txt
+./MyLinux/Training/24.txt
+./MyLinux/Training/22.txt
+./MyLinux/Training/50.txt
+./MyLinux/Training/46.txt
+./MyLinux/Training/40.txt
+./MyLinux/Training/9.txt
+./MyLinux/Training/34.txt
+./MyLinux/Training/2.txt
+./MyLinux/Training/20.txt
+./MyLinux/Training/8.txt
+./MyLinux/Training/47.txt
+./MyLinux/Training/44.txt
+./MyLinux/Training/49.txt
+./MyLinux/Training/39.txt
+./MyLinux/Training/43.txt
+./MyLinux/Training/26.txt
+./MyLinux/Training/38.txt
+./MyLinux/Training/7.txt
+./MyLinux/100 Sales Records.csv
+./MyLinux/haiku.txt
+./MyLinux/history.txt
+./MyLinux/longest.sh
+./MyLinux/recent.sh
+./MyLinux/moved.txt
+./MyLinux/new.txt
+./MyLinux/greetings.txt
+./MyLinux/sorted.txt
+./MyLinux/numbers.txt
+./MyLinux/cmd.sh
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ find type d
+[?2004lfind: ‘type’: No such file or directory
+find: ‘d’: No such file or directory
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ find type d-d[C
+[?2004lfind: warning: the -d option is deprecated; please use -depth instead, because the latter is a POSIX-compliant feature.
+find: ‘type’: No such file or directory
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ find type -d[1Pd[1@-[C[C[C[C[C[C
+[?2004l.
+./project
+./project/data
+./project/results
+./MyLinux
+./MyLinux/Training
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ find -type d[Kf
+[?2004l./MyLinux/Training/36.txt
+./MyLinux/Training/29.txt
+./MyLinux/Training/48.txt
+./MyLinux/Training/23.txt
+./MyLinux/Training/6.txt
+./MyLinux/Training/31.txt
+./MyLinux/Training/3.txt
+./MyLinux/Training/25.txt
+./MyLinux/Training/33.txt
+./MyLinux/Training/37.txt
+./MyLinux/Training/32.txt
+./MyLinux/Training/30.txt
+./MyLinux/Training/45.txt
+./MyLinux/Training/4.txt
+./MyLinux/Training/21.txt
+./MyLinux/Training/28.txt
+./MyLinux/Training/42.txt
+./MyLinux/Training/35.txt
+./MyLinux/Training/41.txt
+./MyLinux/Training/27.txt
+./MyLinux/Training/5.txt
+./MyLinux/Training/24.txt
+./MyLinux/Training/22.txt
+./MyLinux/Training/50.txt
+./MyLinux/Training/46.txt
+./MyLinux/Training/40.txt
+./MyLinux/Training/9.txt
+./MyLinux/Training/34.txt
+./MyLinux/Training/2.txt
+./MyLinux/Training/20.txt
+./MyLinux/Training/8.txt
+./MyLinux/Training/47.txt
+./MyLinux/Training/44.txt
+./MyLinux/Training/49.txt
+./MyLinux/Training/39.txt
+./MyLinux/Training/43.txt
+./MyLinux/Training/26.txt
+./MyLinux/Training/38.txt
+./MyLinux/Training/7.txt
+./MyLinux/100 Sales Records.csv
+./MyLinux/haiku.txt
+./MyLinux/history.txt
+./MyLinux/longest.sh
+./MyLinux/recent.sh
+./MyLinux/moved.txt
+./MyLinux/new.txt
+./MyLinux/greetings.txt
+./MyLinux/sorted.txt
+./MyLinux/numbers.txt
+./MyLinux/cmd.sh
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ find -type f[K[K[K[K[K[K[Kname *.txt
+[?2004lfind: ‘name’: No such file or directory
+find: ‘*.txt’: No such file or directory
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ find name *.txt[1@-[C[C[C[C[C[C[C[C[C[C
+[?2004l./MyLinux/Training/36.txt
+./MyLinux/Training/29.txt
+./MyLinux/Training/48.txt
+./MyLinux/Training/23.txt
+./MyLinux/Training/6.txt
+./MyLinux/Training/31.txt
+./MyLinux/Training/3.txt
+./MyLinux/Training/25.txt
+./MyLinux/Training/33.txt
+./MyLinux/Training/37.txt
+./MyLinux/Training/32.txt
+./MyLinux/Training/30.txt
+./MyLinux/Training/45.txt
+./MyLinux/Training/4.txt
+./MyLinux/Training/21.txt
+./MyLinux/Training/28.txt
+./MyLinux/Training/42.txt
+./MyLinux/Training/35.txt
+./MyLinux/Training/41.txt
+./MyLinux/Training/27.txt
+./MyLinux/Training/5.txt
+./MyLinux/Training/24.txt
+./MyLinux/Training/22.txt
+./MyLinux/Training/50.txt
+./MyLinux/Training/46.txt
+./MyLinux/Training/40.txt
+./MyLinux/Training/9.txt
+./MyLinux/Training/34.txt
+./MyLinux/Training/2.txt
+./MyLinux/Training/20.txt
+./MyLinux/Training/8.txt
+./MyLinux/Training/47.txt
+./MyLinux/Training/44.txt
+./MyLinux/Training/49.txt
+./MyLinux/Training/39.txt
+./MyLinux/Training/43.txt
+./MyLinux/Training/26.txt
+./MyLinux/Training/38.txt
+./MyLinux/Training/7.txt
+./MyLinux/haiku.txt
+./MyLinux/history.txt
+./MyLinux/moved.txt
+./MyLinux/new.txt
+./MyLinux/greetings.txt
+./MyLinux/sorted.txt
+./MyLinux/numbers.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ find -name *.txt[1@w[1@c[1@ [1@-[1@l[1@ [1@([C[C[C[C[C[C[C[C[C[C[1@$[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C)
+[?2004l   0 ./MyLinux/Training/36.txt
+   0 ./MyLinux/Training/29.txt
+   0 ./MyLinux/Training/48.txt
+   0 ./MyLinux/Training/23.txt
+   0 ./MyLinux/Training/6.txt
+   0 ./MyLinux/Training/31.txt
+   0 ./MyLinux/Training/3.txt
+   0 ./MyLinux/Training/25.txt
+   0 ./MyLinux/Training/33.txt
+   0 ./MyLinux/Training/37.txt
+   0 ./MyLinux/Training/32.txt
+   0 ./MyLinux/Training/30.txt
+   0 ./MyLinux/Training/45.txt
+   0 ./MyLinux/Training/4.txt
+   0 ./MyLinux/Training/21.txt
+   0 ./MyLinux/Training/28.txt
+   0 ./MyLinux/Training/42.txt
+   0 ./MyLinux/Training/35.txt
+   0 ./MyLinux/Training/41.txt
+   0 ./MyLinux/Training/27.txt
+   0 ./MyLinux/Training/5.txt
+   0 ./MyLinux/Training/24.txt
+   0 ./MyLinux/Training/22.txt
+   0 ./MyLinux/Training/50.txt
+   0 ./MyLinux/Training/46.txt
+   0 ./MyLinux/Training/40.txt
+   0 ./MyLinux/Training/9.txt
+   0 ./MyLinux/Training/34.txt
+   0 ./MyLinux/Training/2.txt
+   0 ./MyLinux/Training/20.txt
+   0 ./MyLinux/Training/8.txt
+   0 ./MyLinux/Training/47.txt
+   0 ./MyLinux/Training/44.txt
+   0 ./MyLinux/Training/49.txt
+   0 ./MyLinux/Training/39.txt
+   0 ./MyLinux/Training/43.txt
+   0 ./MyLinux/Training/26.txt
+   0 ./MyLinux/Training/38.txt
+   0 ./MyLinux/Training/7.txt
+  11 ./MyLinux/haiku.txt
+ 114 ./MyLinux/history.txt
+   2 ./MyLinux/moved.txt
+  20 ./MyLinux/new.txt
+   2 ./MyLinux/greetings.txt
+   8 ./MyLinux/sorted.txt
+   8 ./MyLinux/numbers.txt
+ 165 total
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ wc -l $(find -name *.txt) | sort -n | hea d -n 3[K10
+[?2004l   0 ./MyLinux/Training/20.txt
+   0 ./MyLinux/Training/21.txt
+   0 ./MyLinux/Training/22.txt
+   0 ./MyLinux/Training/23.txt
+   0 ./MyLinux/Training/24.txt
+   0 ./MyLinux/Training/25.txt
+   0 ./MyLinux/Training/26.txt
+   0 ./MyLinux/Training/27.txt
+   0 ./MyLinux/Training/28.txt
+   0 ./MyLinux/Training/29.txt
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ wc -l $(find -name *.txt) | sort -n | head -n 10[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -[1P[A]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -n[1P 10[A]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -n [1P10[A]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct -n 10[A]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca -n 10[A]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci [1@-[1@l[C[C[C[C[C[C
+[?2004l   0 ./MyLinux/Training/8.txt
+   0 ./MyLinux/Training/9.txt
+   2 ./MyLinux/greetings.txt
+   2 ./MyLinux/moved.txt
+   8 ./MyLinux/numbers.txt
+   8 ./MyLinux/sorted.txt
+  11 ./MyLinux/haiku.txt
+  20 ./MyLinux/new.txt
+ 114 ./MyLinux/history.txt
+ 165 total
+[?2004h]0;abinesh@abinesh-VirtualBox: ~/Desktop[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~/Desktop[00m$ cd
+[?2004l[?2004h]0;abinesh@abinesh-VirtualBox: ~[01;32mabinesh@abinesh-VirtualBox[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2022-03-16 02:17:48+05:30 [COMMAND_EXIT_CODE="0"]
